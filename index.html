@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Clock In - Download & Setup</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --bg: #f4f6fb;
+      --card-bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.25rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 800px;
+      margin: -1.5rem auto 3rem;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .download-card {
+      text-align: center;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.9rem 2.5rem;
+      border-radius: 8px;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .download-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .download-meta {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    ol, ul {
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    code {
+      background: #eef2ff;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StudentLog</h1>
+    <p>Download and setup guide</p>
+  </header>
+
+  <main>
+    <section class="card download-card">
+      <h2>Download</h2>
+      <a class="download-btn" href="StudentLog.zip" download>Download StudentLog.zip</a>
+      <p class="download-meta">Windows 10/11 (64-bit) &mdash; extract the zip before running setup.</p>
+    </section>
+
+    <section class="card">
+      <h2>Setup Instructions</h2>
+      <ol>
+        <li>Download <code>StudentLog.zip</code> using the button above.</li>
+        <li>Right-click the downloaded zip and choose <strong>Extract All...</strong> to unzip it to a folder.</li>
+        <li>Open the extracted <code>Student Log</code> folder and run <strong>setup - Shortcut</strong>.</li>
+        <li>If prompted by Windows Defender or SmartScreen, click <strong>More info</strong> &rarr; <strong>Run anyway</strong>.</li>
+        <li>The setup script will install the Windows App Runtime (if needed) and launch StudentLog automatically.</li>
+        <li>For easy access later, move <strong>StudentLog - Shortcut</strong> out of the folder (e.g. to your Desktop) &mdash; use it to launch the app going forward.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>System Requirements</h2>
+      <ul>
+        <li>Windows 10 or later (64-bit)</li>
+        <li>Internet connection for first-time setup (to install the Windows App Runtime, if needed)</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Need Help?</h2>
+      <p>If you run into any issues, please open an issue on the GitHub repository.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 StudentLog
+  </footer>
+</body>
+</html>
